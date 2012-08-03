@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : KDLsetup.xml
+    Created on : 09 August 2011, 10:31
+    Author     : ed
+    Description:
+        Setup file for Kill Doctor Lucky source code. Contains Board elements.
+
+        Board elements define Room object parameters. N.B. moveTo elements are also lineOfSight elements -
+        this is reflected in KDL source code.
+
+-->
+
+<KDLsetup>
+    <board name="Original Mansion">
+        <room locationName="Master Suite" nextLocation="Nursery" cardRoom="true">
+            <moveTo>Master Suite - Nursery Corridor</moveTo>
+            <moveTo>Lancaster Room</moveTo>
+            <moveTo>Left Stairs</moveTo>
+            <lineOfSight>Nursery</lineOfSight>
+            <lineOfSight>Gallery</lineOfSight>
+            <lineOfSight>Library</lineOfSight>
+            <lineOfSight>Main Left Corridor</lineOfSight>
+            <lineOfSight>Kitchen</lineOfSight>
+        </room>
+        <room locationName="Master Suite - Nursery Corridor" nextLocation="Nursery" cardRoom="false">
+            <moveTo>Nursery</moveTo>
+            <moveTo>Lancaster Room</moveTo>
+            <moveTo>Master Suite</moveTo>
+            <lineOfSight>Gallery</lineOfSight>
+            <lineOfSight>Library</lineOfSight>
+        </room>
+        <room locationName="Nursery" nextLocation="Armoury" cardRoom="true">
+            <moveTo>Armoury</moveTo>
+            <moveTo>Gallery</moveTo>
+            <moveTo>Master Suite - Nursery Corridor</moveTo>
+            <lineOfSight>Library</lineOfSight>
+            <lineOfSight>Library - Tennessee Room Corridor</lineOfSight>
+            <lineOfSight>Tennessee Room</lineOfSight>
+            <lineOfSight>Master Suite</lineOfSight>
+        </room>
+        <room locationName="Armoury" nextLocation="Library" cardRoom="true">
+            <moveTo>Nursery</moveTo>
+            <moveTo>Library</moveTo>
+            <lineOfSight>Library - Tennessee Room Corridor</lineOfSight>
+            <lineOfSight>Tennessee Room</lineOfSight>
+        </room>
+        <room locationName="Gallery" nextLocation="Library" cardRoom="true">
+            <moveTo>Nursery</moveTo>
+            <moveTo>Library</moveTo>
+            <lineOfSight>Master Suite - Nursery Corridor</lineOfSight>
+            <lineOfSight>Master Suite</lineOfSight>
+        </room>
+        <room locationName="Library" nextLocation="Tennessee Room" cardRoom="true">
+            <moveTo>Armoury</moveTo>
+            <moveTo>Library - Tennessee Room Corridor</moveTo>
+            <moveTo>Gallery</moveTo>
+            <lineOfSight>Master Suite</lineOfSight>
+            <lineOfSight>Nursery</lineOfSight>
+            <lineOfSight>Tennessee Room</lineOfSight>
+            <lineOfSight>Master Suite - Nursery Corridor</lineOfSight>
+        </room>
+        <room locationName="Library - Tennessee Room Corridor" nextLocation="Lilac Room" cardRoom="false">
+            <moveTo>Library</moveTo>
+            <moveTo>Tennessee Room</moveTo>
+            <moveTo>Lilac Room</moveTo>
+            <lineOfSight>Nursery</lineOfSight>
+            <lineOfSight>Armoury</lineOfSight>
+        </room>
+        <room locationName="Tennessee Room" nextLocation="Lilac Room" cardRoom="false">
+            <moveTo>Library - Tennessee Room Corridor</moveTo>
+            <moveTo>Lilac Room</moveTo>
+            <moveTo>Right Stairs</moveTo>
+            <lineOfSight>Nursery</lineOfSight>
+            <lineOfSight>Armoury</lineOfSight>
+            <lineOfSight>Library</lineOfSight>
+            <lineOfSight>Main Right Corridor</lineOfSight>
+            <lineOfSight>Servants Quarters</lineOfSight>
+        </room>
+        <room locationName="Left Stairs" nextLocation="Master Suite" cardRoom="false">
+            <moveTo>Master Suite</moveTo>
+            <moveTo>Lancaster Room</moveTo>
+            <moveTo>Main Left Corridor</moveTo>
+            <lineOfSight>Kitchen</lineOfSight>
+        </room>
+        <room locationName="Lancaster Room" nextLocation="Master Suite" cardRoom="true">
+            <moveTo>Left Stairs</moveTo>
+            <moveTo>Master Suite</moveTo>
+            <moveTo>Master Suite - Nursery Corridor</moveTo>
+        </room>
+        <room locationName="Sitting Room" nextLocation="Trophy Room" cardRoom="true">
+            <moveTo>Dining Hall</moveTo>
+            <moveTo>Main Left Corridor</moveTo>
+            <lineOfSight>Billiard Room</lineOfSight>
+            <lineOfSight>Trophy Room</lineOfSight>
+        </room>
+        <room locationName="Dining Hall" nextLocation="Sitting Room" cardRoom="true">
+            <moveTo>Sitting Room</moveTo>
+            <moveTo>Billiard Room</moveTo>
+            <moveTo>Main Right Corridor</moveTo>
+            <moveTo>Drawing Room</moveTo>
+            <moveTo>Main Left Corridor</moveTo>
+            <lineOfSight>Gallery</lineOfSight>
+            <lineOfSight>Foyer</lineOfSight>
+            <lineOfSight>Piazza</lineOfSight>
+        </room>
+        <room locationName="Billiard Room" nextLocation="Dining Hall" cardRoom="true">
+            <moveTo>Dining Hall</moveTo>
+            <moveTo>Main Right Corridor</moveTo>
+            <lineOfSight>Sitting Room</lineOfSight>
+            <lineOfSight>Parlour</lineOfSight>
+        </room>
+        <room locationName="Lilac Room" nextLocation="Servants Quarters" cardRoom="true">
+            <moveTo>Library - Tennessee Room Corridor</moveTo>
+            <moveTo>Tennessee Room</moveTo>
+            <moveTo>Right Stairs</moveTo>
+        </room>
+        <room locationName="Right Stairs" nextLocation="Lilac Room" cardRoom="false">
+            <moveTo>Tennessee Room</moveTo>
+            <moveTo>Main Right Corridor</moveTo>
+            <moveTo>Lilac Room</moveTo>
+            <lineOfSight>Servants Quarters</lineOfSight>
+        </room>
+        <room locationName="Main Left Corridor" nextLocation="Kitchen" cardRoom="false">
+            <moveTo>Left Stairs</moveTo>
+            <moveTo>Sitting Room</moveTo>
+            <moveTo>Dining Hall</moveTo>
+            <moveTo>Trophy Room</moveTo>
+            <moveTo>Left Lower Corridor</moveTo>
+            <moveTo>Kitchen</moveTo>
+            <lineOfSight>Master Suite</lineOfSight>
+            <lineOfSight>Main Right Corridor</lineOfSight>
+            <lineOfSight>Winter Garden</lineOfSight>
+            <lineOfSight>Wine Cellar</lineOfSight>
+        </room>
+        <room locationName="Main Right Corridor" nextLocation="Servants Quarters" cardRoom="false">
+            <moveTo>Dining Hall</moveTo>
+            <moveTo>Billiard Room</moveTo>
+            <moveTo>Right Stairs</moveTo>
+            <moveTo>Servants Quarters</moveTo>
+            <moveTo>Right Lower Corridor</moveTo>
+            <moveTo>Parlour</moveTo>
+            <lineOfSight>Main Left Corridor</lineOfSight>
+            <lineOfSight>Tennessee Room</lineOfSight>
+            <lineOfSight>White Room</lineOfSight>
+            <lineOfSight>Hedge Maze</lineOfSight>
+        </room>
+        <room locationName="Kitchen" nextLocation="Lancaster Room" cardRoom="true">
+            <moveTo>Main Left Corridor</moveTo>
+            <moveTo>Left Lower Corridor</moveTo>
+            <moveTo>Wine Cellar</moveTo>
+            <lineOfSight>Master Suite</lineOfSight>
+            <lineOfSight>Left Stairs</lineOfSight>
+            <lineOfSight>Trophy Room</lineOfSight>
+            <lineOfSight>Winter Garden</lineOfSight>
+        </room>
+        <room locationName="Left Lower Corridor" nextLocation="Kitchen" cardRoom="false">
+            <moveTo>Main Left Corridor</moveTo>
+            <moveTo>Trophy Room</moveTo>
+            <moveTo>Winter Garden</moveTo>
+            <moveTo>Kitchen</moveTo>
+        </room>
+        <room locationName="Trophy Room" nextLocation="Green House" cardRoom="true">
+            <moveTo>Main Left Corridor</moveTo>
+            <moveTo>Drawing Room</moveTo>
+            <moveTo>Green House</moveTo>
+            <moveTo>Left Lower Corridor</moveTo>
+            <lineOfSight>Sitting Room</lineOfSight>
+            <lineOfSight>Parlour</lineOfSight>
+            <lineOfSight>Kitchen</lineOfSight>
+        </room>
+        <room locationName="Drawing Room" nextLocation="Parlour" cardRoom="true">
+            <moveTo>Dining Hall</moveTo>
+            <moveTo>Parlour</moveTo>
+            <moveTo>Foyer</moveTo>
+            <moveTo>Trophy Room</moveTo>
+            <lineOfSight>Gallery</lineOfSight>
+            <lineOfSight>Piazza</lineOfSight>
+        </room>
+        <room locationName="Foyer" nextLocation="Piazza" cardRoom="true">
+            <moveTo>Drawing Room</moveTo>
+            <moveTo>Piazza</moveTo>
+            <lineOfSight>Dining Hall</lineOfSight>
+            <lineOfSight>Gallery</lineOfSight>
+        </room>
+        <room locationName="Parlour" nextLocation="Billiard Room" cardRoom="true">
+            <moveTo>Main Right Corridor</moveTo>
+            <moveTo>Right Lower Corridor</moveTo>
+            <moveTo>Carriage House</moveTo>
+            <moveTo>Drawing Room</moveTo>
+            <lineOfSight>Billiard Room</lineOfSight>
+            <lineOfSight>Servants Quarters</lineOfSight>
+            <lineOfSight>Trophy Room</lineOfSight>
+        </room>
+        <room locationName="Right Lower Corridor" nextLocation="Hedge Maze" cardRoom="false">
+            <moveTo>Main Right Corridor</moveTo>
+            <moveTo>Servants Quarters</moveTo>
+            <moveTo>Hedge Maze</moveTo>
+            <moveTo>Parlour</moveTo>
+        </room>
+        <room locationName="Servants Quarters" nextLocation="Hedge Maze" cardRoom="true">
+            <moveTo>Main Right Corridor</moveTo>
+            <moveTo>White Room</moveTo>
+            <moveTo>Right Lower Corridor</moveTo>
+            <lineOfSight>Right Stairs</lineOfSight>
+            <lineOfSight>Tennessee Room</lineOfSight>
+            <lineOfSight>Hedge Maze</lineOfSight>
+            <lineOfSight>Parlour</lineOfSight>
+        </room>
+        <room locationName="Wine Cellar" nextLocation="Kitchen" cardRoom="true">
+            <moveTo>Kitchen</moveTo>
+            <moveTo>Winter Garden</moveTo>
+            <lineOfSight>Main Left Corridor</lineOfSight>
+        </room>
+        <room locationName="Green House" nextLocation="Winter Garden" cardRoom="true">
+            <moveTo>Trophy Room</moveTo>
+            <moveTo>Piazza</moveTo>
+            <moveTo>Winter Garden</moveTo>
+            <lineOfSight>Carriage House</lineOfSight>
+            <lineOfSight>Hedge Maze</lineOfSight>
+        </room>
+        <room locationName="Piazza" nextLocation="Drawing Room" cardRoom="true">
+            <moveTo>Foyer</moveTo>
+            <moveTo>Carriage House</moveTo>
+            <moveTo>Green House</moveTo>
+            <lineOfSight>Drawing Room</lineOfSight>
+            <lineOfSight>Dining Hall</lineOfSight>
+            <lineOfSight>Gallery</lineOfSight>
+            <lineOfSight>Hedge Maze</lineOfSight>
+            <lineOfSight>Winter Garden</lineOfSight>
+        </room>
+        <room locationName="Carriage House" nextLocation="Piazza" cardRoom="true">
+            <moveTo>Parlour</moveTo>
+            <moveTo>Hedge Maze</moveTo>
+            <moveTo>Piazza</moveTo>
+            <lineOfSight>Green House</lineOfSight>
+            <lineOfSight>Winter Garden</lineOfSight>
+        </room>
+        <room locationName="White Room" nextLocation="Hedge Maze" cardRoom="true">
+            <moveTo>Servants Quarters</moveTo>
+            <moveTo>Hedge Maze</moveTo>
+            <lineOfSight>Main Right Corridor</lineOfSight>
+        </room>
+        <room locationName="Winter Garden" nextLocation="Kitchen" cardRoom="true">
+            <moveTo>Wine Cellar</moveTo>
+            <moveTo>Left Lower Corridor</moveTo>
+            <moveTo>Green House</moveTo>
+            <lineOfSight>Kitchen</lineOfSight>
+            <lineOfSight>Main Left Corridor</lineOfSight>
+            <lineOfSight>Piazza</lineOfSight>
+            <lineOfSight>Carriage House</lineOfSight>
+        </room>
+        <room locationName="Hedge Maze" nextLocation="Carriage House" cardRoom="true">
+            <moveTo>Right Lower Corridor</moveTo>
+            <moveTo>White Room</moveTo>
+            <moveTo>Carriage House</moveTo>
+            <lineOfSight>Main Right Corridor</lineOfSight>
+            <lineOfSight>Servants Quarters</lineOfSight>
+            <lineOfSight>Piazza</lineOfSight>
+            <lineOfSight>Green House</lineOfSight>
+        </room>
+    </board>
+</KDLsetup>

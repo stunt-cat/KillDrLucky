@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : KDLcardssetup_originalcards.xml
+    Created on : 05 September 2011, 10:43
+    Author     : ed
+    Description:
+        Setup file for Kill Doctor Lucky source code. Contains ICard elements for original cardset
+
+        cardPiles elements define different ICard object parameters. N.B. There are multiple
+        copies of some specific ICards.
+-->
+
+<KDLsetup>
+    <cardPiles name="Original Cards">
+        <card type="FailureCard" value="1" count="26"></card>
+        <card type="FailureCard" value="2" count="12"></card>
+        <card type="FailureCard" value="3" count="4"></card>
+        <card type="MoveCard" value="1" count="8"></card>
+        <card type="MoveCard" value="2" count="4"></card>
+        <card type="MoveCard" value="3" count="2"></card>
+        <card type="WeaponCard" name="Tight Hat" value="2"></card>
+        <card type="WeaponCard" name="Killing Joke" value="3"></card>
+        <card type="WeaponCard" name="Runcible Spoon" value="3"></card>
+        <card type="WeaponCard" name="Silken Cord" value="3"></card>
+        <card type="WeaponCard" name="Big Red Hammer" value="4"></card>
+        <card type="WeaponCard" name="Chain Saw" value="4"></card>
+        <card type="SpecialWeaponCard" name="Bad Cream" value="2" specialWeaponValue="5" specialWeaponLocation="Sitting Room"></card>
+        <card type="SpecialWeaponCard" name="Pinking Shears" value="2" specialWeaponValue="6" specialWeaponLocation="Lilac Room"></card>
+        <card type="SpecialWeaponCard" name="Rat Poison" value="2" specialWeaponValue="5" specialWeaponLocation="Green House"></card>
+        <card type="SpecialWeaponCard" name="Broom Stick" value="2" specialWeaponValue="7" specialWeaponLocation="Servants Quarters"></card>
+        <card type="SpecialWeaponCard" name="Loud Noise" value="2" specialWeaponValue="6" specialWeaponLocation="Carriage House"></card>
+        <card type="SpecialWeaponCard" name="Piece Of Rope" value="2" specialWeaponValue="8" specialWeaponLocation="Gallery"></card>
+        <card type="SpecialWeaponCard" name="Billiard Cue" value="2" specialWeaponValue="5" specialWeaponLocation="Billiard Room"></card>
+        <card type="SpecialWeaponCard" name="Monkey Hand" value="2" specialWeaponValue="8" specialWeaponLocation="Foyer"></card>
+        <card type="SpecialWeaponCard" name="Letter Opener" value="2" specialWeaponValue="5" specialWeaponLocation="Library"></card>
+        <card type="SpecialWeaponCard" name="Shoe Horn" value="2" specialWeaponValue="7" specialWeaponLocation="Lancaster Room"></card>
+        <card type="SpecialWeaponCard" name="Trowel" value="2" specialWeaponValue="6" specialWeaponLocation="Wine Cellar"></card>
+        <card type="SpecialWeaponCard" name="Duck Decoy" value="3" specialWeaponValue="4" specialWeaponLocation="Trophy Room"></card>
+        <card type="SpecialWeaponCard" name="Civil War Cannon" value="3" specialWeaponValue="5" specialWeaponLocation="Armoury"></card>
+        <card type="SpecialWeaponCard" name="Crepe Pan" value="3" specialWeaponValue="4" specialWeaponLocation="Kitchen"></card>
+        <card type="RoomCard" name="Master Suite"></card>
+        <card type="RoomCard" name="Nursery"></card>
+        <card type="RoomCard" name="Armoury"></card>
+        <card type="RoomCard" name="Gallery"></card>
+        <card type="RoomCard" name="Library"></card>
+        <card type="RoomCard" name="Sitting Room"></card>
+        <card type="RoomCard" name="Dining Hall"></card>
+        <card type="RoomCard" name="Billiard Room"></card>
+        <card type="RoomCard" name="Lilac Room"></card>
+        <card type="RoomCard" name="Kitchen"></card>
+        <card type="RoomCard" name="Trophy Room"></card>
+        <card type="RoomCard" name="Foyer"></card>
+        <card type="RoomCard" name="Parlour"></card>
+        <card type="RoomCard" name="Wine Cellar"></card>
+        <card type="RoomCard" name="Green House"></card>
+        <card type="RoomCard" name="Piazza"></card>
+        <card type="RoomCard" name="Carriage House"></card>
+        <card type="RoomCard" name="White Room"></card>
+        <card type="RoomCard" name="Winter Garden"></card>
+        <card type="RoomCard" name="Hedge Maze"></card>
+    </cardPiles>
+</KDLsetup>
